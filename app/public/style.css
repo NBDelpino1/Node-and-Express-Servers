@@ -1,0 +1,40 @@
+.jumbotron {
+	text-align: center;
+	font-family: 'Amatic SC',cursive;
+	height: 100vh;
+	margin-bottom: 0;
+	background-color: #cd890a;
+	color: #fff;
+}
+
+.glyphicon-user {
+	margin: 2px;
+}
+
+footer {
+	font-family: 'Amatic SC',cursive;
+}
+
+#blue {
+	color: #337ab7;
+}
+
+.form-group {
+	width: 60%;
+/*reduce full width input boxes*/
+	margin: auto;
+/*center input boxes*/
+	font-size: 1.5em;
+}
+
+.form-control {
+	font-size: 1em;
+}
+
+select,input[type="color" i][list] {
+	background-color: #337ab7;
+}
+
+#survey {
+	height: 100%;
+}
