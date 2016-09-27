@@ -27,6 +27,8 @@ footer {
 	font-size: 1.5em;
 }
 
+
+
 .form-control {
 	font-size: 1em;
 }
@@ -37,4 +39,28 @@ select,input[type="color" i][list] {
 
 #survey {
 	height: 100%;
+}
+
+/*modal*/
+.modal-content{
+		text-align: center;
+	font-family: 'Amatic SC',cursive;
+	margin-bottom: 0;
+	background-color: #cd890a;
+	color: #fff;
+}
+.photo{
+	height: 300px;
+	background-color: grey;
+}
+.well{
+	background-color: #bf810e;
+	border-color: #cd890a;
+
+}
+/*modal end*/
+
+
+#q9{
+	font-family: 'Amatic SC',cursive;
 }
