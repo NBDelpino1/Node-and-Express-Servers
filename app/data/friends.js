@@ -1,6 +1,7 @@
-// Possible Friends (DATA)
+// Friends
 // =============================================================
-var characters = [{
+var friends = [
+{
 	name: 'Kelly Price',
 	photo: "http://blogs-images.forbes.com/files/2014/07/kateashford_avatar_1405024965-400x400.jpg", //
     scores:[
@@ -48,34 +49,9 @@ var characters = [{
 			]
 }];
 
-// find total score of each potential match so they can compare to user score to determine compatability
-// =======================================================================================================
-
-var kellyPrice = characters[0].scores;
-var brookeSmith = characters[1].scores;
-var jessicaVasquez = characters[2].scores;
-
-
-
-function getSum(total, num) {
-    return total + num;
-}
-
-function myFunction() {
-
-    var kellyPriceScore = kellyPrice.reduce(getSum);
-    console.log(kellyPriceScore);
-    var brookeSmithScore = brookeSmith.reduce(getSum);
-    console.log(brookeSmithScore);
-    var jessicaVasquezScore = jessicaVasquez.reduce(getSum);
-    console.log(jessicaVasquezScore);
-
-}
-
-myFunction();
-
-
-
+// Export the friends object so we can require it later
+// =============================================================
+module.exports = friends;
 
 
 

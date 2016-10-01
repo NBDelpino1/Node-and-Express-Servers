@@ -15,23 +15,16 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
-
-// Routes
-// =============================================================
-
-// GET Route to `/survey`
-app.get('/survey', function (req, res) {
-	res.sendFile(path.join(__dirname, 'app/public/survey.html'));
-	console.log("Path to folders: " + path.join(__dirname));
-});
-
-// Default USE route that leads to `/home.html`
-app.use('/home', function(req, res){
-   res.sendFile(path.join(__dirname, 'app/public/home.html'));
-});
+// CSS
+app.use(express.static('app/public'));
+// Use require to be able to access these files
+require('./app/routing/api-routes.js')(app);
+require('./app/routing/html-routes.js')(app);
 
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function () {
 	console.log('App listening on PORT ' + PORT);
 });
+
+
