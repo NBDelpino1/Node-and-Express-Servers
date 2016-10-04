@@ -8,6 +8,7 @@ var path = require('path');
 // =============================================================
 var app = express();
 var PORT = 3000;
+// Very important snippet, enables app to work on Heroku
 var port = process.env.PORT;
 app.listen(port);
 // Sets up the Express app to handle data parsing
