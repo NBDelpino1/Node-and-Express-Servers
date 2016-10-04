@@ -259,7 +259,7 @@
 
      <footer class="footer"><!--footer-->
       <div class="container">
-	        <p><a href="/api/tables">API Table Link</a> | <a href="https://github.com/afhaque/HotRestaurant">GitHub Repo</a> | <a href="/api/tables">By Nicholas Delpino</a></p> 
+	        <p><a href="/api/tables">API Table Link</a> | <a href="https://github.com/NBDelpino1/Week-of-13-HW-Friend-Finder---Node-and-Express-Servers">GitHub Repo</a> | <a href="/api/tables">By Nicholas Delpino</a></p> 
       </div>
     </footer><!--footer end-->
 
@@ -280,6 +280,7 @@ function GetOptions(){
 
 	var userValueTotal = Array.prototype.map.call(selects, function($el) {
 		return parseInt($el.value);
+		console.log(userValueTotal);
 	})
 	.reduce(function(prev, val) {
 		return val + prev;
@@ -331,6 +332,8 @@ function GetOptions(){
 	console.log(userValueTotal);
 	
 }
+
+
 // ==============================================================================
 </script>
 

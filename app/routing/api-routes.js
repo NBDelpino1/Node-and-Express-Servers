@@ -1,7 +1,7 @@
 // Dependencies
 // =============================================================
 var friends = require('../data/friends.js');
-console.log(friends);
+// console.log(friends);
 
 // Routes
 // =============================================================
